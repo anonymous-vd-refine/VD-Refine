@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools==83.0.0", "wheel==0.44.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vd-refine-brats"
+version = "1.0.0"
+description = "BraTS reproduction code for VD-Refine"
+requires-python = ">=3.10,<3.11"
+license = {file = "LICENSE"}
+dependencies = ["torch==2.4.0", "numpy==1.26.4", "scipy==1.14.1", "SimpleITK==2.5.5", "nibabel==5.4.2", "batchgenerators==0.25.3", "acvl-utils==0.2.6", "dynamic-network-architectures==0.4.4", "scikit-image==0.24.0", "scikit-learn==1.5.2", "pandas==2.2.3", "matplotlib==3.9.2", "seaborn==0.13.2", "tqdm==4.66.5", "graphviz==0.21", "tifffile==2024.9.20", "imagecodecs==2025.3.30", "requests==2.32.3"]
+
+[project.scripts]
+nnUNetv2_train = "nnunetv2.run.run_training:run_training_entry"
+nnUNetv2_predict = "nnunetv2.inference.predict_from_raw_data:predict_entry_point"
+
+[tool.setuptools.packages.find]
+include = ["nnunetv2*"]

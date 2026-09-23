@@ -1,0 +1,20 @@
+{
+  "kind": "historical inference-only checkpoint",
+  "source_checkpoint_sha256": "e53db285eef57321308ba9024ccab2e2e6b53eec6ef0839511c3c287878990b2",
+  "exported_checkpoint_sha256": "d4449fdcbf278e61e2c0f528afb7d0147ef68a5509aa077bf23c9f7ffab63f08",
+  "all_network_tensors_bit_identical": true,
+  "tensor_count": 260,
+  "best_checkpoint_logged_epochs": 94,
+  "mirroring_axes": [
+    0,
+    1,
+    2
+  ],
+  "excluded": [
+    "optimizer",
+    "training logger",
+    "local paths",
+    "resume state"
+  ],
+  "note": "Historical Stage A was reused with a fresh optimizer at epoch 50. Not a seed2027/2028 result."
+}

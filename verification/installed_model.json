@@ -1,0 +1,197 @@
+{
+  "parameters": 4399737,
+  "decoder_blocks": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "epochs": 100,
+  "optimizer": "AdamW",
+  "input_shape": [
+    1,
+    4,
+    64,
+    64,
+    64
+  ],
+  "device": "cpu",
+  "dtype": "float32",
+  "inference": {
+    "0": {
+      "sha256": "a73e64d725fd00fd2959d21414836e5ad5e3e31841c5a44f1d1bf7f3c436bf70",
+      "fast_equals_legacy": true,
+      "counts": {
+        "tail3": 1,
+        "tail4": 1,
+        "head": 1
+      }
+    },
+    "1": {
+      "sha256": "5955cb4db59330060956af947ad6ba11a00b3eea463cabc2cff03475fd6195b8",
+      "fast_equals_legacy": true,
+      "counts": {
+        "refiner": 1,
+        "tail3": 1,
+        "tail4": 1,
+        "head": 1
+      }
+    },
+    "2": {
+      "sha256": "6cfb7f460735de160a74ea8e7703e7c5cc883bef164a5704b551475389adce6a",
+      "fast_equals_legacy": true,
+      "counts": {
+        "refiner": 2,
+        "tail3": 1,
+        "tail4": 1,
+        "head": 1
+      }
+    },
+    "4": {
+      "sha256": "e238e36edb2c8d2eda45c5c6f2039446fc437985503248b91e0097b27a76a4d6",
+      "fast_equals_legacy": true,
+      "counts": {
+        "refiner": 4,
+        "tail3": 1,
+        "tail4": 1,
+        "head": 1
+      }
+    },
+    "8": {
+      "sha256": "2a4ebae32ff194548ce074b8d5934b9d910a6bc9751758df6bd5dd7bb77d7f23",
+      "fast_equals_legacy": true,
+      "counts": {
+        "refiner": 8,
+        "tail3": 1,
+        "tail4": 1,
+        "head": 1
+      }
+    },
+    "16": {
+      "sha256": "5ac39ef8efa2ee7b92fbfa5455e2ca240a42b4c5e28f71ed6e94232a84b5637d",
+      "fast_equals_legacy": true,
+      "counts": {
+        "refiner": 16,
+        "tail3": 1,
+        "tail4": 1,
+        "head": 1
+      }
+    },
+    "32": {
+      "sha256": "a7e86635f4dca822025eef2c02ec423caeb4c8ace7bbc6f387132cf74dc17d0f",
+      "fast_equals_legacy": true,
+      "counts": {
+        "refiner": 32,
+        "tail3": 1,
+        "tail4": 1,
+        "head": 1
+      }
+    },
+    "inf": {
+      "sha256": "1470a4c8ba84612ed708890cb905a53f496f20bf996e6d962941c5e9ccad887e",
+      "counts": {
+        "refiner": 8,
+        "tail3": 1,
+        "tail4": 1,
+        "head": 1
+      }
+    }
+  },
+  "training": {
+    "A": {
+      "losses": {
+        "loss": 2.4364452362060547,
+        "loss_kA": 2.4364452362060547
+      },
+      "updated_state_sha256": "07764716ddbdbb232c9ffaa70bba272d69059e354fc98b1e5473e3cd8a197339",
+      "trainable_tensors": 260,
+      "lr_groups": {
+        "refiner": 0.0001,
+        "film": 0.0001,
+        "encoder": 0.0001,
+        "decoder": 0.0001,
+        "heads": 0.0001
+      }
+    },
+    "B1-K4": {
+      "losses": {
+        "loss": 2.302183151245117,
+        "loss_k_band0": 2.3938708305358887,
+        "loss_k_band1": 2.3481087684631348,
+        "loss_k_band2": 2.267338275909424,
+        "monotonic_loss": 0.0,
+        "loss_k_virtual": 2.1994142532348633
+      },
+      "updated_state_sha256": "b3852263b57799edddd09418c56dba5cae205288f564102d841728320e8cabca",
+      "trainable_tensors": 11,
+      "lr_groups": {
+        "refiner": 0.0001,
+        "film": 0.0,
+        "encoder": 0.0,
+        "decoder": 0.0,
+        "heads": 0.0
+      }
+    },
+    "C1": {
+      "losses": {
+        "loss": 2.3120598793029785,
+        "loss_k_live": 2.4364452362060547,
+        "loss_k_deep0": 2.2414443492889404,
+        "loss_k_deep1": 2.3481087684631348,
+        "loss_k_deep2": 2.222241163253784
+      },
+      "updated_state_sha256": "aebee3f0e799ec727b067cc987a8ac30ea6741f0d2ccd38b0fb1fa5f38839d8e",
+      "trainable_tensors": 249,
+      "lr_groups": {
+        "refiner": 0.0,
+        "film": 1e-05,
+        "encoder": 5e-06,
+        "decoder": 1e-05,
+        "heads": 0.0001
+      }
+    },
+    "B2-K8": {
+      "losses": {
+        "loss": 2.2972183227539062,
+        "loss_k_band0": 2.4271461963653564,
+        "loss_k_band1": 2.3481087684631348,
+        "loss_k_band2": 2.222241163253784,
+        "monotonic_loss": 0.0,
+        "loss_k_virtual": 2.1913766860961914
+      },
+      "updated_state_sha256": "f580f9e400e17ef0c47546f6ab00326e4342f2295a3dddeee094f2cdbd54e2c3",
+      "trainable_tensors": 11,
+      "lr_groups": {
+        "refiner": 2e-05,
+        "film": 0.0,
+        "encoder": 0.0,
+        "decoder": 0.0,
+        "heads": 0.0
+      }
+    },
+    "C2": {
+      "losses": {
+        "loss": 2.27644681930542,
+        "loss_k4": 2.3481087684631348,
+        "loss_k5": 2.3031020164489746,
+        "loss_k6": 2.267338275909424,
+        "loss_k7": 2.2414443492889404,
+        "loss_k8": 2.222241163253784
+      },
+      "updated_state_sha256": "2ae8b80d887815fb0031794d8a954799316adc487dd1b5d58b88f8a79a699c98",
+      "trainable_tensors": 34,
+      "lr_groups": {
+        "refiner": 0.0,
+        "film": 5e-06,
+        "encoder": 2.5e-06,
+        "decoder": 5e-06,
+        "heads": 5e-05
+      }
+    }
+  },
+  "seed_entries": [
+    2027,
+    2028
+  ]
+}

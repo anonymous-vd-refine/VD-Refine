@@ -1,0 +1,5 @@
+{
+  "checked_text_files": 156,
+  "findings": [],
+  "scope": "Absolute personal paths, private IP patterns and checkpoint field allowlist; third-party attribution intentionally retained. This does not guarantee anonymity against every external correlation."
+}

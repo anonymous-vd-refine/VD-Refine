@@ -1,0 +1,561 @@
+{
+  "files": [
+    {
+      "path": "nnunetv2/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/configuration.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/ensembling/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/ensembling/ensemble.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/evaluation/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/evaluation/accumulate_cv_results.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/evaluation/evaluate_predictions.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/evaluation/find_best_configuration.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/dataset_fingerprint/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/dataset_fingerprint/fingerprint_extractor.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/experiment_planners/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/experiment_planners/default_experiment_planner.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/experiment_planners/network_topology.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/experiment_planners/resencUNet_planner.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/plan_and_preprocess_api.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/plan_and_preprocess_entrypoints.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/plans_for_pretraining/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/plans_for_pretraining/move_plans_between_datasets.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/experiment_planning/verify_dataset_integrity.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/imageio/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/imageio/base_reader_writer.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/imageio/natural_image_reader_writer.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/imageio/nibabel_reader_writer.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/imageio/reader_writer_registry.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/imageio/simpleitk_reader_writer.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/imageio/tif_reader_writer.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/inference/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/inference/data_iterators.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/inference/examples.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/inference/export_prediction.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/inference/predict_from_raw_data.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/inference/sliding_window_prediction.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/nets/LiteRBUNeXt3D.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/paths.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": false,
+      "change": "portable default data root"
+    },
+    {
+      "path": "nnunetv2/postprocessing/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/postprocessing/remove_connected_components.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/cropping/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/cropping/cropping.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/normalization/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/normalization/default_normalization_schemes.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/normalization/map_channel_name_to_normalization.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/preprocessors/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/preprocessors/default_preprocessor.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/resampling/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/resampling/default_resampling.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/preprocessing/resampling/utils.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/run/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/run/load_pretrained_weights.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/run/run_training.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/data_augmentation/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/data_augmentation/compute_initial_patch_size.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/data_augmentation/custom_transforms/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/data_augmentation/custom_transforms/cascade_transforms.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/data_augmentation/custom_transforms/deep_supervision_donwsampling.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/data_augmentation/custom_transforms/limited_length_multithreaded_augmenter.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/data_augmentation/custom_transforms/manipulating_data_dict.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/data_augmentation/custom_transforms/masking.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/data_augmentation/custom_transforms/region_based_training.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/data_augmentation/custom_transforms/transforms_for_dummy_2d.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/dataloading/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/dataloading/base_data_loader.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/dataloading/data_loader_2d.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/dataloading/data_loader_3d.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/dataloading/nnunet_dataset.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/dataloading/utils.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/logging/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/logging/nnunet_logger.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/loss/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/loss/compound_losses.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/loss/deep_supervision.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/loss/dice.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/loss/robust_ce_loss.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/lr_scheduler/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/lr_scheduler/polylr.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainer.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerAllScaleTBPTTRandK4UNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMUNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMVirtualDeepFrozenFiLMRandDepthUNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMVirtualDeepFrozenFiLMUNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMVirtualDeepUNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderUNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanUNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMultiStartK8TBPTT2ABCUNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipTBPTT2RandK8UNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteSDRRAlternatingABCDec16Dec32UNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteSDRRDec16Dec32RandK3UNeXt3DStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteStableV2.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainer_brats802_PaperSeed2027.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainer_brats802_PaperSeed2028.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/training/nnUNetTrainer/paper_replicate_seed_mixin.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/collate_outputs.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/dataset_name_id_conversion.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/ddp_allgather.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/default_n_proc_DA.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/file_path_utilities.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/find_class_by_name.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/get_network_from_plans.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/helpers.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/json_export.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/label_handling/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/label_handling/label_handling.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/network_initialization.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/overlay_plots.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/plans_handling/__init__.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/plans_handling/plans_handler.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    },
+    {
+      "path": "nnunetv2/utilities/utils.py",
+      "library_ast_equal_ignoring_docstrings_and_main_examples": true,
+      "change": "none in library computation"
+    }
+  ],
+  "method_modules_equivalent": true,
+  "note": "Python AST comparison excludes docstrings and standalone preprocessing examples and __main__ blocks; paths.py has an intentional portable-root change."
+}
