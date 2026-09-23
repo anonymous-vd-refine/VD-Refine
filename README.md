@@ -1,6 +1,6 @@
 # VD-Refine: BraTS reproduction package
 
-Anonymous review release **v1.0.0** for *Virtual-Depth Supervision for Stable Recurrent Medical Image Segmentation*.
+Anonymous review release for *Virtual-Depth Supervision for Stable Recurrent Medical Image Segmentation*.
 
 This package contains the BraTS2020 VD-Refine recipe (VirtualDeep + FrozenFiLM + RandDepth), its required nnU-Net runtime, the fixed **236 train / 59 validation / 74 test** split, and metadata for the anonymized **historical checkpoint_best**. The binary weights are distributed separately in the full release archive. Other datasets and experiment variants are outside the release scope.
 
