@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
-  "date": "2026-09-23",
-  "scope": "BraTS2020 VD-Refine",
+  "version": "1.1.0",
+  "date": "2026-09-24",
+  "scope": "BraTS2020, LiTS and DRIVE paper recipes",
   "split": {
     "train": 236,
     "validation": 59,
@@ -20,7 +20,6 @@
     "32",
     "inf"
   ],
-  "seed_replicates": "unfinished at recorded observation; no completed E100 replicate claims",
   "full_retraining_performed_for_release": false,
   "new_full_cohort_inference_performed_for_release": false,
   "historical_predictions_reevaluated": true,
