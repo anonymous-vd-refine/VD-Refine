@@ -1,4 +1,4 @@
-"""Do not report an unfinished seed as a completed E100 experiment."""
+"""Do not report an unfinished run as a completed E100 experiment."""
 import argparse
 from pathlib import Path
 import torch
