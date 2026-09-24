@@ -16,5 +16,5 @@
     "local paths",
     "resume state"
   ],
-  "note": "Historical Stage A was reused with a fresh optimizer at epoch 50. Not a seed2027/2028 result."
+  "note": "Historical Stage A was reused with a fresh optimizer at epoch 50."
 }
