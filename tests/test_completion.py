@@ -1,4 +1,4 @@
-"""Check that incomplete seed checkpoints cannot pass the E100 gate."""
+"""Check that incomplete checkpoints cannot pass the E100 gate."""
 import subprocess,sys,tempfile,unittest
 from pathlib import Path
 import torch

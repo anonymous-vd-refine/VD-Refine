@@ -1,4 +1,4 @@
-"""CPU equivalence probe: source/release outputs, fast decode, stage updates and seeds.
+"""CPU equivalence probe: source/release outputs, fast decode, and stage updates.
 Run separately with each package root on PYTHONPATH, then compare the JSON reports.
 Uses a deterministic synthetic 64^3 patch; does not replace full-volume evaluation.
 """
@@ -12,7 +12,7 @@ def state_digest(net):
     h=hashlib.sha256()
     for k,t in sorted(net.state_dict().items()):h.update(k.encode());h.update(t.detach().cpu().contiguous().numpy().tobytes())
     return h.hexdigest()
-def reset_rng():random.seed(2027);np.random.seed(2027);torch.manual_seed(2027)
+def reset_rng():random.seed(0);np.random.seed(0);torch.manual_seed(0)
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--assets',type=Path,default=Path(__file__).resolve().parents[1]);p.add_argument('--output',type=Path,required=True);p.add_argument('--expected-package',type=Path,required=True);a=p.parse_args()
@@ -27,13 +27,10 @@ def main():
         from nnunetv2.utilities.plans_handling.plans_handler import PlansManager
         from nnunetv2.inference.predict_from_raw_data import nnUNetPredictor
         plans=json.loads((a.assets/'dataset/nnUNetPlans.json').read_text());ds=json.loads((a.assets/'dataset/dataset.json').read_text())
-        trainers=[]
-        for seed in (2027,2028):
-            name=f'nnUNetTrainer_brats802_PaperSeed{seed}'
-            cls=getattr(importlib.import_module('nnunetv2.training.nnUNetTrainer.'+name),name)
-            obj=cls(plans,'3d_fullres',0,ds,device=torch.device('cpu'));assert obj.num_epochs==100
-            trainers.append(obj)
-        obj=trainers[0];obj.initialize();net=obj.network
+        name='nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMVirtualDeepFrozenFiLMRandDepthUNeXt3DStableV2'
+        cls=getattr(importlib.import_module('nnunetv2.training.nnUNetTrainer.'+name),name)
+        obj=cls(plans,'3d_fullres',0,ds,device=torch.device('cpu'));assert obj.num_epochs==100
+        obj.initialize();net=obj.network
         assert not obj.enable_deep_supervision
         assert sum(p.numel() for p in net.parameters())==4399737
         assert [len(s.refine) for s in net.proposal_stages]==[1]*5
@@ -42,7 +39,7 @@ def main():
         ck=torch.load(a.assets/'weights/historical/fold_0/checkpoint_best.pth',map_location='cpu',weights_only=True)
         net.load_state_dict(ck['network_weights'],strict=True);net.eval()
         reset_rng();x=torch.randn(1,4,64,64,64)
-        report={'parameters':4399737,'decoder_blocks':[1]*5,'epochs':100,'optimizer':'AdamW','input_shape':list(x.shape),'device':'cpu','dtype':'float32','inference':{},'training':{},'seed_entries':[2027,2028]}
+        report={'parameters':4399737,'decoder_blocks':[1]*5,'epochs':100,'optimizer':'AdamW','input_shape':list(x.shape),'device':'cpu','dtype':'float32','inference':{},'training':{}}
         counts={}
         def hook(name):
             def f(*args):counts[name]=counts.get(name,0)+1
