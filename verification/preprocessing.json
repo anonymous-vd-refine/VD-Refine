@@ -1,1 +1,17 @@
-{"case": "BraTS20_Training_003", "data_shape": [4, 135, 163, 129], "seg_shape": [1, 135, 163, 129], "data_sha256": "c12ef67d9ca821b94ed7a8585dc406c908d46ba205ab3d39d91c0c6e2d6aae06", "seg_sha256": "ad36105d3c59390272479eda2f59484b69cf5c89fb2bd2e56f37eafbc6b6dc5f"}
+{
+  "case": "BraTS20_Training_003",
+  "data_shape": [
+    4,
+    135,
+    163,
+    129
+  ],
+  "seg_shape": [
+    1,
+    135,
+    163,
+    129
+  ],
+  "data_sha256": "c12ef67d9ca821b94ed7a8585dc406c908d46ba205ab3d39d91c0c6e2d6aae06",
+  "seg_sha256": "ad36105d3c59390272479eda2f59484b69cf5c89fb2bd2e56f37eafbc6b6dc5f"
+}

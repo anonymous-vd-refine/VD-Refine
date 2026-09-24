@@ -364,18 +364,6 @@
     "source_sha256": "d58f0fa3ad99f2f23fd808366d419e1511ca0065747c6e5b8a0b86a16c62c95b"
   },
   {
-    "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainer_brats802_PaperSeed2027.py",
-    "source_sha256": "05ed293a64ac87550250533526c4a9b68e68fca012642b04368112c93c53b8df"
-  },
-  {
-    "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainer_brats802_PaperSeed2028.py",
-    "source_sha256": "e0351162f2848d534149bcf38a0adf656e3a01d6af23fabea6672ff225802b15"
-  },
-  {
-    "path": "nnunetv2/training/nnUNetTrainer/paper_replicate_seed_mixin.py",
-    "source_sha256": "883dc9b845191a6c3004ce61d5095dcbfb946686c6b8b63de10ac85b8c88ad2f"
-  },
-  {
     "path": "nnunetv2/utilities/__init__.py",
     "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
@@ -442,5 +430,29 @@
   {
     "path": "nnunetv2/utilities/utils.py",
     "source_sha256": "a317dc7c6913abc9dca0926d3896454d0cfd23d0e9b398b098f26a8d434872f7"
+  },
+  {
+    "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMVirtualDeepFrozenFiLMRandDepthBatchDiceLossUNeXt3DStableV2.py",
+    "source_sha256": "c24f672345d089be84e18d158e16756d09ecd1a14f352845cc7b1bbbad07f2c7"
+  },
+  {
+    "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainer_LiTS822_ProposalPreserving.py",
+    "source_sha256": "a9f99fd2602cfc391477cbb6ebf9d678dfb4c35406ce81a66885b1907df42912"
+  },
+  {
+    "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainer_LiTS822_KcovA.py",
+    "source_sha256": "a58e235e4c2526970315623f5658f19b2ea60dcedcae7938cd1b4a1c40385f89"
+  },
+  {
+    "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMVirtualDeepFrozenFiLMRandDepthUNeXt2DStableV2.py",
+    "source_sha256": "f84f83e789d8c02cb89c5f5f48ca0635facc5f6c6ffb15d5ecca4d96740411c1"
+  },
+  {
+    "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMVirtualDeepFrozenFiLMRandDepthBatchDiceLossUNeXt2DStableV2.py",
+    "source_sha256": "aaded42821d32103840073008e2e9fd96a3fca8f0ac8ec633a1ad2d9de586f40"
+  },
+  {
+    "path": "nnunetv2/training/nnUNetTrainer/nnUNetTrainer_2D_KcovAB.py",
+    "source_sha256": "a54b9a302dccee03409c120097152e8d1fc1dea0c05ac1c5cd8d5cdc0299a277"
   }
 ]
