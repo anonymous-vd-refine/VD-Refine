@@ -35,7 +35,7 @@ class nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8Cl
     * store_all_step_logits=False -- forward() otherwise pins every dead decode branch's
       activations on the module for the whole iteration and into the next (12.7 GB at Stage-A
       depth 2; back-to-back peak 42.2 GB instead of 29.4 GB). The historical run reused Stage A; this memory-saving setting also applies
-      to the release seed runs, which start from scratch.
+      to the released scratch-training workflow.
     * _proposal_stop_index -- the B/C helpers read only proposal_states[1] and [2] and rebuild
       everything above the refine index via _replay_proposal_from_state, so building the 64^3 and
       128^3 stages in _proposal() is wasted work. Wasted compute under no_grad in B/C2; in C1,

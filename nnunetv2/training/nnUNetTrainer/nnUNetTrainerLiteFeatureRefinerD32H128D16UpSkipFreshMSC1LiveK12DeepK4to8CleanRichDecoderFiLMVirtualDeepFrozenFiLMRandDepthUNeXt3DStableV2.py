@@ -45,7 +45,7 @@ class nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8Cl
     state only has to land in the right neighbourhood.
 
     The historical model reused the plain FiLM Stage-A weights and reset the optimizer.
-    The release runner trains seeds from scratch; see docs/PROTOCOL.md for provenance.
+    The release runner trains from scratch; see docs/PROTOCOL.md for provenance.
     """
 
     _virtual_b1_start_range = (8, 14)
