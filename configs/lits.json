@@ -1,0 +1,20 @@
+{
+  "dataset": "Dataset822_LiverCT_Seed2026_Corrected",
+  "configuration": "3d_fullres",
+  "fold": 0,
+  "plans": "nnUNetPlans",
+  "trainer": "nnUNetTrainer_LiTS822_KcovAB",
+  "epochs": 100,
+  "checkpoint": "checkpoint_final.pth",
+  "tta": false,
+  "steps": [
+    "0",
+    "1",
+    "2",
+    "4",
+    "8",
+    "16",
+    "32",
+    "inf"
+  ]
+}
