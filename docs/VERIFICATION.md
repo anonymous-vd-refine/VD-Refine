@@ -6,7 +6,7 @@ Checks were run on the source snapshot and the extracted release, without modify
 
 1. **Cohort**: 236/59/74 unique cases, disjoint sets, exact label and four-modality filename sets in the actual dataset. The supplied fold-0 list is the recorded split.
 2. **Method-source equivalence**: 111 required source modules were checked by AST. Method computations are unchanged. Documentation and machine-specific standalone examples are excluded from this comparison; `paths.py` intentionally changes only the default data root. See `verification/source_equivalence.json` and `source_manifest.json`.
-3. **Network and trainer**: 4,399,737 parameters, decoder [1,1,1,1,1], E100, AdamW, no deep supervision after initialization, two seed entrypoints import successfully.
+3. **Network and trainer**: 4,399,737 parameters, decoder [1,1,1,1,1], E100, AdamW, no deep supervision after initialization.
 4. **Inference**: CPU FP32, deterministic synthetic input [1,4,64,64,64], supplied historical weights. K=0/1/2/4/8/16/32 and analytic inf output hashes are identical between source and release. Finite fast-path logits are bit-identical to explicit all-step decoding. Hooks verify one final decoder-tail/head call and K refiner calls (eight for inf).
 5. **Training updates**: one synthetic training step in A, B1, C1, B2 and C2. Losses and updated state-dictionary hashes match source and release exactly. B1/B2 have 11 trainable shared-block tensors and preserve all other network tensors.
 6. **Preprocessing**: a real held-out case was processed using both implementations; preprocessed image and segmentation array hashes match exactly. See `verification/preprocessing.json`.
@@ -18,6 +18,10 @@ Checks were run on the source snapshot and the extracted release, without modify
 
 ## Limits
 
-The numerical probes use a 64³ CPU patch, while training uses 128³ patches and CUDA. This release verification does not rerun E100, all 74 full-volume predictions, or cross-device reproducibility. Two new seeds remain incomplete in the dated status manifest. Installing the wheel in a virtual environment reused the existing third-party runtime and overlaid corrected packages; this is not a fresh download/install of every CUDA dependency. The historical weights are inference-only and cannot resume training.
+The numerical probes use a 64³ CPU patch, while training uses 128³ patches and CUDA. This release verification does not rerun E100, all 74 full-volume predictions, or cross-device reproducibility. Installing the wheel in a virtual environment reused the existing third-party runtime and overlaid corrected packages; this is not a fresh download/install of every CUDA dependency. The historical weights are inference-only and cannot resume training.
 
-The package records historical results and the exact reproduction protocol without claiming that a fresh seeded run must reproduce the historical numbers bit-for-bit.
+The package records historical results and the exact reproduction protocol without claiming that a fresh training run must reproduce the historical numbers bit-for-bit.
+
+## LiTS and DRIVE extension
+
+See `MULTIDATASET.md`, `verification/multidataset_smoke.json`, and `verification/multidataset_source_equivalence.json`. The six additional trainer modules preserve the research source computation. Synthetic conversion and complete-cohort metric tests pass. CPU forward checks pass for K=0, K=2 and analytic mode, including the original DRIVE 512x512 input. The older original/release/installed-model JSONs remain historical BraTS probe reports; the current probe uses a fixed synthetic RNG fixture. No E100 training or new full-cohort inference was run for this update.

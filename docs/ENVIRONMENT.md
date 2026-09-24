@@ -6,8 +6,8 @@ Install in an isolated environment, then install this source with `pip install -
 
 A compatible NVIDIA driver and adequate GPU memory are needed for training. The native training plan is batch 2 × 4 modalities × 128³. CPU verification uses a smaller 64³ synthetic input to avoid occupying experiment GPUs. Such a smoke test is not a memory benchmark or full E100 reproduction.
 
-The seed mixin initializes Python, NumPy and Torch RNGs and augmentation worker seeds. It inherits the existing asynchronous data-loader and backend behavior. GPU/CPU or dependency changes may introduce numerical differences; random seeds do not imply bitwise deterministic repeated training.
 
 The original environment's `blosc2==4.3.3` metadata required `numexpr>=2.14.1`, but `numexpr==2.10.0` was installed. The release pins `numexpr==2.14.1` and supplies the missing declared dependencies `future` and `unittest2` (and their small dependency closure). This is a packaging correction, not a model-code change. The updated runtime is checked against the numerical reference.
 
 Installation validation builds and installs a wheel into a separate virtual environment and verifies imports resolve to the installed wheel, not the original editable source tree. The virtual environment reuses the machine's installed third-party runtime (`--system-site-packages`) and overlays the dependency corrections. Thus the test does **not** claim a completely fresh network installation of all CUDA wheels. The 78-package pinned dependency graph is checked separately for missing or conflicting active requirements.
+The released runners use the original trainer recipes. Asynchronous data loading, hardware and dependency changes may introduce numerical differences; bitwise deterministic retraining is not claimed.

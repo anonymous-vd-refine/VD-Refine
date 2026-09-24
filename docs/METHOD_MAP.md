@@ -1,6 +1,6 @@
 # Method-to-code map
 
-The trainer chain is retained to preserve checkpoint compatibility and original computation. Only the required chain is packaged; users select the two short seed configs or the historical inference artifact.
+The trainer chain is retained to preserve checkpoint compatibility and original computation. Only the required chain is packaged; users select the dataset configuration or the historical inference artifact.
 
 | Component | Implementation |
 |---|---|
@@ -24,8 +24,5 @@ The trainer chain is retained to preserve checkpoint compatibility and original 
 - `nnUNetTrainerLiteSDRRAlternatingABCDec16Dec32UNeXt3DStableV2` → `nnUNetTrainerLiteSDRRDec16Dec32RandK3UNeXt3DStableV2`
 - `nnUNetTrainerLiteSDRRDec16Dec32RandK3UNeXt3DStableV2` → `nnUNetTrainerLiteStableV2`
 - `nnUNetTrainerLiteStableV2` → `nnUNetTrainer`
-- `nnUNetTrainer_brats802_PaperSeed2027` → `PaperReplicateSeedMixin`, `nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMVirtualDeepFrozenFiLMRandDepthUNeXt3DStableV2`
-- `nnUNetTrainer_brats802_PaperSeed2028` → `PaperReplicateSeedMixin`, `nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMVirtualDeepFrozenFiLMRandDepthUNeXt3DStableV2`
-- `PaperReplicateSeedMixin` → 
 
 The release does not collapse these classes into a new monolithic trainer. Executable method ASTs are compared to the source snapshot, and numerical probes compare every inference mode plus updates in each of the five training phases.

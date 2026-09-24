@@ -14,11 +14,9 @@ Patch: 128³. Batch size: 2. Spacing: 1mm³. Z-score normalization uses nonzero 
 
 Stage A samples K=1 (probability 0.6) or K=2. The B-phase real starts come from bands [0,1], [2,4], [4,6], with two differentiable corrections. Virtual starts: B1 uniform integers [8,14]; B2 0.6×uniform[8,14]+0.4×uniform[15,30]. The endpoint is the start plus two real corrections. Virtual loss weights ramp 0.05→0.20 across B1 and 0.20→0.25 across B2. Odd virtual starts use fractional powers of the two-step decay ratio.
 
-### Historical checkpoint versus new seeds
+### Historical checkpoint and scratch training
 
-The historical run did **not** execute a fresh Stage A in its final output directory. It loaded the plain-FiLM `checkpoint_stage_A` weights and logger state, then continued at epoch 50 with a fresh optimizer. Its Stage-A source used the same recorded 236/59 split. The final recipe ran through epoch 99. This is the provenance of the supplied historical inference artifact; it must not be described as a newly completed seed2027 or seed2028 run.
-
-The two seed entrypoints train the inherited E100 recipe from scratch with explicit seeds. The release runner disables all Stage-A reuse and pretrained-weight environment overrides. These new replicates can differ from the historical result because their initialization, randomness and optimizer history are not the same. Resuming training does not claim to restore bitwise worker scheduling.
+The historical run loaded the plain-FiLM Stage-A checkpoint and logger state, then continued at epoch 50 with a fresh optimizer. Its Stage-A source used the same recorded 236/59 split. The final recipe ran through epoch 99. The released runner trains the original recipe from scratch and disables inherited warm-start paths. Historical numbers are reference results; a new run is not guaranteed to reproduce them exactly.
 
 ## Inference and metrics
 

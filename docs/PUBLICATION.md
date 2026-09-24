@@ -1,9 +1,9 @@
-# Publishing this snapshot
+# Publishing the anonymous code release
 
-Upload the versioned release archive or its extracted contents to the chosen anonymous hosting service. Keep `LICENSE`, `THIRD_PARTY_NOTICES.md`, the historical checkpoint provenance and verification reports with the code. Do not add local logs, shell histories, original checkpoint payloads, data symlinks, private manifests or Git history from the experiment workspace.
+This v1.1.0 snapshot contains code, cohort metadata, reference results and verification records for BraTS, LiTS and DRIVE. It contains no dataset images or binary pretrained weights. Preserve LICENSE, THIRD_PARTY_NOTICES.md and the historical checkpoint provenance when redistributing it.
 
-The full release archive is self-contained for code and historical weights. This GitHub mirror is code-only and omits the large checkpoint; see the README for the companion-archive procedure. Dataset images must be obtained separately. The wheel alone is not the complete release: it does not carry the dataset metadata, scripts, results or weights stored alongside the source.
+The public repository is https://github.com/anonymous-vd-refine/VD-Refine and the project page is https://anonymous-vd-refine.github.io/VD-Refine/ . Do not add private logs, shell histories, data symlinks, original checkpoint payloads or experiment-workspace Git history.
 
-Verify the archive SHA256 after upload and check the link while logged out before adding it to the manuscript. Use a fixed version or snapshot link so subsequent edits do not silently change the reviewed artifact. Any later code or result change should receive a new version and updated checksum; do not replace the v1.0.0 archive in place.
+Use a fixed commit or versioned archive when citing the code in a submission. Verify the final uploaded files against SHA256SUMS; the checksum list describes this complete release snapshot, including its website. The wheel alone does not include the dataset metadata, scripts and reference tables stored alongside the source.
 
-Local file integrity can be checked from the extracted root with `sha256sum -c SHA256SUMS` on Linux. No hosting account or public link is configured in this package.
+Run `sha256sum -c SHA256SUMS` from the extracted repository root on Linux to verify integrity. Dataset access terms and pretrained-weight availability are separate from the code release.
