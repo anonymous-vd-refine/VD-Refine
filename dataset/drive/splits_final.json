@@ -1,0 +1,132 @@
+[
+    {
+        "train": [
+            "DRIVE_21",
+            "DRIVE_22",
+            "DRIVE_23",
+            "DRIVE_25",
+            "DRIVE_26",
+            "DRIVE_27",
+            "DRIVE_28",
+            "DRIVE_30",
+            "DRIVE_31",
+            "DRIVE_32",
+            "DRIVE_33",
+            "DRIVE_35",
+            "DRIVE_36",
+            "DRIVE_38",
+            "DRIVE_39",
+            "DRIVE_40"
+        ],
+        "val": [
+            "DRIVE_24",
+            "DRIVE_29",
+            "DRIVE_34",
+            "DRIVE_37"
+        ]
+    },
+    {
+        "train": [
+            "DRIVE_22",
+            "DRIVE_23",
+            "DRIVE_24",
+            "DRIVE_25",
+            "DRIVE_26",
+            "DRIVE_27",
+            "DRIVE_28",
+            "DRIVE_29",
+            "DRIVE_30",
+            "DRIVE_32",
+            "DRIVE_34",
+            "DRIVE_35",
+            "DRIVE_37",
+            "DRIVE_38",
+            "DRIVE_39",
+            "DRIVE_40"
+        ],
+        "val": [
+            "DRIVE_21",
+            "DRIVE_31",
+            "DRIVE_33",
+            "DRIVE_36"
+        ]
+    },
+    {
+        "train": [
+            "DRIVE_21",
+            "DRIVE_22",
+            "DRIVE_23",
+            "DRIVE_24",
+            "DRIVE_25",
+            "DRIVE_26",
+            "DRIVE_29",
+            "DRIVE_30",
+            "DRIVE_31",
+            "DRIVE_33",
+            "DRIVE_34",
+            "DRIVE_35",
+            "DRIVE_36",
+            "DRIVE_37",
+            "DRIVE_39",
+            "DRIVE_40"
+        ],
+        "val": [
+            "DRIVE_27",
+            "DRIVE_28",
+            "DRIVE_32",
+            "DRIVE_38"
+        ]
+    },
+    {
+        "train": [
+            "DRIVE_21",
+            "DRIVE_22",
+            "DRIVE_23",
+            "DRIVE_24",
+            "DRIVE_25",
+            "DRIVE_26",
+            "DRIVE_27",
+            "DRIVE_28",
+            "DRIVE_29",
+            "DRIVE_31",
+            "DRIVE_32",
+            "DRIVE_33",
+            "DRIVE_34",
+            "DRIVE_36",
+            "DRIVE_37",
+            "DRIVE_38"
+        ],
+        "val": [
+            "DRIVE_30",
+            "DRIVE_35",
+            "DRIVE_39",
+            "DRIVE_40"
+        ]
+    },
+    {
+        "train": [
+            "DRIVE_21",
+            "DRIVE_24",
+            "DRIVE_27",
+            "DRIVE_28",
+            "DRIVE_29",
+            "DRIVE_30",
+            "DRIVE_31",
+            "DRIVE_32",
+            "DRIVE_33",
+            "DRIVE_34",
+            "DRIVE_35",
+            "DRIVE_36",
+            "DRIVE_37",
+            "DRIVE_38",
+            "DRIVE_39",
+            "DRIVE_40"
+        ],
+        "val": [
+            "DRIVE_22",
+            "DRIVE_23",
+            "DRIVE_25",
+            "DRIVE_26"
+        ]
+    }
+]
