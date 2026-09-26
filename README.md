@@ -39,7 +39,7 @@ The release supports BraTS2020, LiTS and DRIVE through the same workflow: prepar
 | Dataset | Source data |
 |---|---|
 | BraTS2020 | The provider's BraTS2020 training data. |
-| LiTS | **MSD Task03_Liver**, with its `imagesTr` and `labelsTr` directories. |
+| LiTS | MSD Task03_Liver, with its `imagesTr` and `labelsTr` directories. |
 | DRIVE | The official `training` and `test` directories, with RGB images and first-observer manual annotations. |
 
 Run the conversion command for the dataset you want to use:
