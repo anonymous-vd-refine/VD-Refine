@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="VD-Refine: virtual-depth supervision for stable recurrent medical image segmentation. Method, three-dataset results, and anonymous code for BraTS, LiTS and DRIVE.">
+<meta name="description" content="Dreaming Deeper: Stable Recurrent Medical Image Segmentation Beyond Training Rollouts. Method, three-dataset results, and anonymous VD-Refine code for BraTS, LiTS and DRIVE.">
 <meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light">
-<title>VD-Refine · Virtual-Depth Supervision</title>
+<title>Dreaming Deeper: Stable Recurrent Medical Image Segmentation Beyond Training Rollouts</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=20260924-paper">
 <script src="depth-data.js?v=20260924-paper" defer></script><script src="site.js?v=20260924-paper" defer></script>
 </head>
@@ -14,7 +14,7 @@
 <main id="main">
 <section class="hero wrap">
 <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> ICLR 2027 · Anonymous submission</p>
-<h1><em>Virtual-Depth Supervision</em> for Stable Recurrent Medical Image Segmentation</h1>
+<h1><em>Dreaming Deeper</em>: Stable Recurrent Medical Image Segmentation Beyond Training Rollouts</h1>
 <p class="intro">Train on short trajectories. Learn to refine beyond them.</p>
 <p class="lede">A compact segmentation model learns from estimated late states. Eight real training steps support useful refinement beyond the training horizon—across brain MRI, liver CT and retinal images.</p>
 <div class="actions"><a class="button primary" href="https://github.com/anonymous-vd-refine/VD-Refine" rel="noreferrer">Anonymous code <span aria-hidden="true">↗</span></a><a class="button secondary" href="#method">Explore the method <span aria-hidden="true">↓</span></a></div>
@@ -62,7 +62,7 @@
 <figure class="paper-figure"><a href="dynamics.png" target="_blank" rel="noopener" aria-label="Open full-resolution feature dynamics figure"><img src="dynamics.png" alt="Comparison of relative feature norm, update norm, and prediction change with and without FiLM across recurrent depths." loading="lazy"></a><figcaption>Conditioned normalization controls feature scale while update magnitudes and prediction changes diminish. The underlying summaries use 500 held-out BraTS patches per sampled depth.</figcaption></figure>
 <figure class="paper-figure qualitative"><a href="case-study.png" target="_blank" rel="noopener" aria-label="Open full-resolution segmentation examples"><img src="case-study.png" alt="Selected BraTS segmentation examples comparing image, ground truth, and predictions at different recurrent depths." loading="lazy"></a><figcaption>Two selected held-out BraTS cases (213 and 331), showing tumor-core predictions. Green marks the correct TC region; red marks false positives or false negatives. Labels report the example’s TC Dice, not cohort mean Dice.</figcaption></figure>
 </div></section>
-<section class="wrap section resources" id="resources"><div><p class="eyebrow">04 / REPRODUCIBILITY</p><h2>Explore the anonymous release.</h2><p>Code for all three datasets is available in one anonymous repository: model definitions, dataset-specific training and inference recipes, fixed cohorts, evaluation scripts and reference depth curves.</p><a class="button primary" href="https://github.com/anonymous-vd-refine/VD-Refine" rel="noreferrer">View the code repository ↗</a></div><div class="resource-notes"><h3>Reproduce the reported protocols</h3><ul><li><strong>BraTS:</strong> 236 / 59 / 74 train / validation / test; validation-best checkpoint, TTA.</li><li><strong>LiTS:</strong> 92 / 13 / 26; final checkpoint, no TTA.</li><li><strong>DRIVE:</strong> 16 / 4 / 20; validation-best checkpoint, TTA.</li><li>Code, cohort metadata and reference results are released. Dataset images and pretrained binary weights are not included.</li></ul><div class="resource-links"><a href="https://github.com/anonymous-vd-refine/VD-Refine/blob/main/docs/PROTOCOL.md" rel="noreferrer">BraTS protocol ↗</a><a href="https://github.com/anonymous-vd-refine/VD-Refine/blob/main/docs/MULTIDATASET.md" rel="noreferrer">LiTS &amp; DRIVE ↗</a><a href="https://github.com/anonymous-vd-refine/VD-Refine/blob/main/docs/VERIFICATION.md" rel="noreferrer">Verification ↗</a></div></div>
+<section class="wrap section resources" id="resources"><div><p class="eyebrow">04 / REPRODUCIBILITY</p><h2>Explore the anonymous release.</h2><p>Code for all three datasets is available in one anonymous repository: model definitions, dataset-specific training and inference recipes, fixed cohorts, evaluation scripts and reference depth curves.</p><a class="button primary" href="https://github.com/anonymous-vd-refine/VD-Refine" rel="noreferrer">View the code repository ↗</a></div><div class="resource-notes"><h3>Reproduce the reported protocols</h3><ul><li><strong>BraTS:</strong> 236 / 59 / 74 train / validation / test; validation-best checkpoint, TTA.</li><li><strong>LiTS:</strong> 92 / 13 / 26; final checkpoint, no TTA.</li><li><strong>DRIVE:</strong> 16 / 4 / 20; validation-best checkpoint, TTA.</li><li>Code, cohort metadata and reference results are released. Dataset images and pretrained binary weights are not included.</li></ul></div>
 </section>
 </main><footer class="wrap"><a class="wordmark" href="#">VD<span>·</span>Refine</a><p>Anonymous research project · ICLR 2027 submission</p><a href="#main">Back to top ↑</a></footer>
 </body></html>
