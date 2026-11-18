@@ -1,0 +1,20 @@
+{
+  "dataset": "Dataset804_DRIVE",
+  "configuration": "2d",
+  "fold": 0,
+  "plans": "nnUNetPlans",
+  "trainer": "nnUNetTrainer_DRIVE804_KcovAB",
+  "epochs": 100,
+  "checkpoint": "checkpoint_best.pth",
+  "tta": true,
+  "steps": [
+    "0",
+    "1",
+    "2",
+    "4",
+    "8",
+    "16",
+    "32",
+    "inf"
+  ]
+}

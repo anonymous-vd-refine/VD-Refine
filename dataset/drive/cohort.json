@@ -1,0 +1,48 @@
+{
+  "train": [
+    "DRIVE_21",
+    "DRIVE_22",
+    "DRIVE_23",
+    "DRIVE_25",
+    "DRIVE_26",
+    "DRIVE_27",
+    "DRIVE_28",
+    "DRIVE_30",
+    "DRIVE_31",
+    "DRIVE_32",
+    "DRIVE_33",
+    "DRIVE_35",
+    "DRIVE_36",
+    "DRIVE_38",
+    "DRIVE_39",
+    "DRIVE_40"
+  ],
+  "val": [
+    "DRIVE_24",
+    "DRIVE_29",
+    "DRIVE_34",
+    "DRIVE_37"
+  ],
+  "test": [
+    "DRIVE_01",
+    "DRIVE_02",
+    "DRIVE_03",
+    "DRIVE_04",
+    "DRIVE_05",
+    "DRIVE_06",
+    "DRIVE_07",
+    "DRIVE_08",
+    "DRIVE_09",
+    "DRIVE_10",
+    "DRIVE_11",
+    "DRIVE_12",
+    "DRIVE_13",
+    "DRIVE_14",
+    "DRIVE_15",
+    "DRIVE_16",
+    "DRIVE_17",
+    "DRIVE_18",
+    "DRIVE_19",
+    "DRIVE_20"
+  ]
+}

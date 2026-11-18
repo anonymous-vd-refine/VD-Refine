@@ -1,0 +1,32 @@
+{
+  "channel_names": {
+    "0": "T1",
+    "1": "T1ce",
+    "2": "T2",
+    "3": "Flair"
+  },
+  "labels": {
+    "background": 0,
+    "whole tumor": [
+      1,
+      2,
+      3
+    ],
+    "tumor core": [
+      2,
+      3
+    ],
+    "enhancing tumor": [
+      3
+    ]
+  },
+  "regions_class_order": [
+    1,
+    2,
+    3
+  ],
+  "numTraining": 295,
+  "file_ending": ".nii.gz",
+  "name": "Dataset802_BraTS2020",
+  "description": "BraTS2020: 236 training, 59 validation, 74 held-out test; fixed fold 0."
+}

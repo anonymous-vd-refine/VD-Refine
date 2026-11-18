@@ -1,0 +1,20 @@
+{
+  "dataset": "Dataset802_BraTS",
+  "configuration": "3d_fullres",
+  "fold": 0,
+  "plans": "nnUNetPlans",
+  "trainer": "nnUNetTrainerLiteFeatureRefinerD32H128D16UpSkipFreshMSC1LiveK12DeepK4to8CleanRichDecoderFiLMVirtualDeepFrozenFiLMRandDepthUNeXt3DStableV2",
+  "epochs": 100,
+  "checkpoint": "checkpoint_best.pth",
+  "tta": true,
+  "steps": [
+    "0",
+    "1",
+    "2",
+    "4",
+    "8",
+    "16",
+    "32",
+    "inf"
+  ]
+}

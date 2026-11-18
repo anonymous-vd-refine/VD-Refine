@@ -1,0 +1,10 @@
+{
+  "source_and_release_model_reports_equal": true,
+  "finite_and_analytic_modes": 8,
+  "training_stage_update_checks": 5,
+  "historical_case_mode_rows": 592,
+  "historical_per_case_metric_max_abs_difference": 0,
+  "metric_values_compared": 2368,
+  "n_cases_per_mode": 74,
+  "installed_wheel_with_corrected_dependencies_equals_original": true
+}

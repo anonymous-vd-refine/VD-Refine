@@ -1,0 +1,16 @@
+{
+    "channel_names": {
+        "0": "R",
+        "1": "G",
+        "2": "B"
+    },
+    "labels": {
+        "background": 0,
+        "vessel": 1
+    },
+    "numTraining": 20,
+    "file_ending": ".tif",
+    "overwrite_image_reader_writer": "NaturalImage2DIO",
+    "name": "Dataset804_DRIVE",
+    "description": "DRIVE official training set with seed 2026 16/4 train/val split; official test held out."
+}

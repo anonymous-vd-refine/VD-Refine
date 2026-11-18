@@ -1,0 +1,14 @@
+{
+  "channel_names": {
+    "0": "CT"
+  },
+  "labels": {
+    "background": 0,
+    "liver": 1,
+    "tumor": 2
+  },
+  "numTraining": 105,
+  "file_ending": ".nii.gz",
+  "name": "Dataset822_LiverCT_Seed2026_Corrected",
+  "description": "LiTS/MSD Task03 Liver rebuilt from the verified official archive. Same Seed 2026 split as Dataset811: 92 train, 13 validation, 26 held-out test. Mapping liver_n -> Liver_{n+1:04d}."
+}
