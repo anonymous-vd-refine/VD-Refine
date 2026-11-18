@@ -23,7 +23,7 @@ LiTS uses `checkpoint_final.pth`, no TTA; DRIVE uses validation-selected `checkp
 
 LiTS whole-liver masks are the union of labels 1 and 2; tumor is label 2. DRIVE uses vessel label 1 over the complete image, without an extra FOV mask. Empty/empty gives NaN. Cohort means are means of per-case region means. All 26 or 20 cases must be present for every requested setting.
 
-`results/lits_depth_results.csv` contains the original LiTS full-cohort evaluation summary. The current DRIVE summary is `docs/drive-depth-results.csv`, which reports the Table 1 mean and standard deviation across training runs. The superseded DRIVE summary and its historical single-checkpoint case export have been removed. This release does not include binary weights or claim a new training/evaluation run.
+`results/lits_depth_results.csv` contains the original LiTS full-cohort evaluation summary. The current DRIVE summary is `results/drive-depth-results.csv`, which reports the Table 1 mean and standard deviation across training runs. The superseded DRIVE summary and its historical single-checkpoint case export have been removed. This release does not include binary weights or claim a new training/evaluation run.
 
 ## Release verification
 

@@ -27,7 +27,7 @@ function update(){
  const download = document.getElementById('dataset-download');
  download.hidden = dataset === 'drive';
  if (download.hidden) download.removeAttribute('href');
- else download.href = dataset + '-depth-results.csv';
+ else download.href = 'https://raw.githubusercontent.com/anonymous-vd-refine/VD-Refine/main/results/' + (dataset === 'brats' ? 'strict_historical_scaling_dice.csv' : 'lits_depth_results.csv');
  document.getElementById('measurement-table').innerHTML=`<table><caption>${b.name}: complete held-out measurements · Dice (%)</caption><thead><tr><th scope="col">Inference</th>${b.regions.map(n=>`<th scope="col">${n}</th>`).join('')}<th scope="col">Mean</th></tr></thead><tbody>${b.rows.map(r=>`<tr><th scope="row">${r.k==='inf'?'8 + analytic':'K = '+r.k}</th>${b.regions.map(n=>`<td>${r.regions[n].toFixed(4)}</td>`).join('')}<td>${r.avg.toFixed(4)}</td></tr>`).join('')}</tbody></table>`;
  document.querySelectorAll('[data-dataset]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.dataset===dataset)));draw(d.k);
 }
