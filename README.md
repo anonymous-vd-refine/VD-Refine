@@ -13,7 +13,7 @@ Table 1 reports mean Dice (%) and standard deviation across training runs on eac
 | Dataset | Train / validation / test | K=32 Dice (%) | Analytic Dice (%) |
 |---|---|---:|---:|
 | BraTS2020 | 236 / 59 / 74 volumes | 85.258 ± 0.185 | 85.239 ± 0.161 |
-| LiTS | 92 / 13 / 26 volumes | 79.734 ± 1.514 | 79.946 ± 0.403 |
+| LiTS | 92 / 13 / 26 volumes | 79.734 ± 1.514 | 79.946 ± 1.084 |
 | DRIVE | 16 / 4 / 20 images | 82.364 ± 0.187 | 82.337 ± 0.212 |
 
 The public package contains the required model/trainer implementation, fixed cohorts and plans, portable conversion/training/prediction/evaluation tools, and reference measurements. Dataset images and pretrained binary weights are not included. Fresh training does not require pretrained weights. New training is not guaranteed to reproduce historical scores exactly; no full E100 retraining was performed to validate this release.
